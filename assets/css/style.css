@@ -3,8 +3,18 @@
 
 /***************** Variables *******************/
 :root {
+	/* Colors */
+	--primary-color: #faac2f;
+	--primary-alt-color: #ff9d00;
+	--secondary-color: #15191d;
+	--tertiary-color: #face86;
+	--white-color: #fcfcfc;
+
 	/* Font Family */
 	--text-ff: 'Rubik', sans-serif;
+
+	/* Font Size */
+	--base-fs: 0.95rem;
 
 	/* Font Weight */
 	--light-fw: 300;
@@ -19,6 +29,9 @@
 	/* Padding */
 	--container-pi: 0.85rem;
 	--section-pb: 3.5rem;
+
+	/* Height */
+	--navbar-mh: 80px;
 }
 
 /***************** General *******************/
@@ -27,11 +40,17 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: var(--text-ff);
+	color: var(--secondary-color);
 }
 
 html,
 body {
 	scroll-behavior: smooth;
+}
+
+body {
+	margin-top: var(--navbar-mh);
+	background-color: var(--white-color);
 }
 
 a {
@@ -41,6 +60,7 @@ a {
 
 ul {
 	list-style: none;
+	display: flex;
 }
 
 button {
@@ -66,8 +86,74 @@ img {
 	padding-block: var(--section-pb);
 }
 
+.btn {
+	background-color: var(--primary-color);
+	padding: 0.75rem 1.25rem;
+	border-radius: 1.25rem;
+	font-weight: var(--semibold-fw);
+	font-size: var(--base-fs);
+	text-transform: capitalize;
+	transition: 0.25s ease-in-out;
+}
+
+.btn:hover {
+	background-color: var(--primary-alt-color);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.grid-2,
+.grid-3,
+.grid-5 {
+	display: grid;
+}
+
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2rem;
+}
+
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1.75rem;
+}
+
+.grid-5 {
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 1.25rem;
+}
+
 /***************** NAVBAR *******************/
-/* TODO: Create NAVBAR style */
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--white-color);
+}
+
+.navbar-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: var(--navbar-mh);
+}
+
+.navbar-menu {
+	flex-direction: row;
+	align-items: center;
+	gap: 1.15rem;
+}
+
+.navbar-logo .text,
+.navbar-link {
+	font-weight: var(--medium-fw);
+	vertical-align: var(--base-fs);
+}
 /************** End of NAVBAR ***************/
 
 /***************** HOME *******************/
@@ -87,7 +173,9 @@ img {
 /************** End of CONTACT ***************/
 
 /***************** FOOTER *******************/
-/* TODO: Create FOOTER style */
+#footer {
+	background-color: var(--tertiary-color);
+}
 /************** End of FOOTER ***************/
 
 /***************** CREDIT *******************/
