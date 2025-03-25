@@ -1,0 +1,67 @@
+/***************** Imports *******************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/***************** Variables *******************/
+:root {
+	/* Font Family */
+	--text-ff: 'Rubik', sans-serif;
+
+	/* Font Weight */
+	--light-fw: 300;
+	--normal-fw: 400;
+	--medium-fw: 500;
+	--semibold-fw: 600;
+	--bold-fw: 700;
+
+	/* Width */
+	--container-mw: 1280px;
+
+	/* Padding */
+	--container-pi: 0.85rem;
+	--section-pb: 3.5rem;
+}
+
+/***************** General *******************/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--text-ff);
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/***************** Reusable *******************/
+.container {
+	max-width: var(--container-mw);
+	padding-inline: var(--container-pi);
+	margin: 0 auto;
+}
+
+.section {
+	padding-block: var(--section-pb);
+}
