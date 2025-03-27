@@ -18,6 +18,7 @@
 	/* Font Size */
 	--base-fs: 0.95rem;
 	--lg-fs: 1.25rem;
+	--xl-fs: 1.75rem;
 	--xxl-fs: 2.75rem;
 
 	/* Font Weight */
@@ -82,6 +83,9 @@ img {
 	height: auto;
 }
 
+p {
+	line-height: 1.8;
+}
 /***************** Reusable *******************/
 .container {
 	max-width: var(--container-mw);
@@ -219,7 +223,38 @@ img {
 /************** End of HOME ***************/
 
 /***************** ABOUT *******************/
-/* TODO: Create ABOUT style */
+.about-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.about-img {
+	max-height: 350px;
+}
+
+.about-img img {
+	height: 100%;
+	margin: auto;
+}
+
+.about-text {
+	padding-block: 2rem;
+}
+
+.about-title {
+	font-size: var(--xl-fs);
+	text-transform: capitalize;
+	margin-bottom: 2.5rem;
+	font-weight: var(--bold-fw);
+}
+
+.about-description {
+	font-size: var(--lg-fs);
+	color: var(--gray-color);
+	font-weight: var(--normal-fw);
+	max-width: 90%;
+}
 /************** End of ABOUT ***************/
 
 /***************** SERVICES *******************/
