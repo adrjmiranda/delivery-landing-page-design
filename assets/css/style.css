@@ -10,12 +10,15 @@
 	--tertiary-color: #face86;
 	--white-color: #fcfcfc;
 	--black-color: #000000;
+	--gray-color: #515152;
 
 	/* Font Family */
 	--text-ff: 'Rubik', sans-serif;
 
 	/* Font Size */
 	--base-fs: 0.95rem;
+	--lg-fs: 1.25rem;
+	--xxl-fs: 2.75rem;
 
 	/* Font Weight */
 	--light-fw: 300;
@@ -92,9 +95,9 @@ img {
 
 .btn {
 	background-color: var(--primary-color);
-	padding: 0.75rem 1.25rem;
+	padding: 0.75rem 1.5rem;
 	border-radius: 1.25rem;
-	font-weight: var(--semibold-fw);
+	font-weight: var(--medium-fw);
 	font-size: var(--base-fs);
 	text-transform: capitalize;
 	transition: 0.25s ease-in-out;
@@ -188,7 +191,31 @@ img {
 /************** End of NAVBAR ***************/
 
 /***************** HOME *******************/
-/* TODO: Create HOME style */
+.home-content {
+	display: grid;
+	grid-template-columns: 35% 60%;
+	column-gap: 5%;
+}
+
+.home-title,
+.home-description {
+	text-transform: capitalize;
+}
+
+.home-title {
+	font-size: var(--xxl-fs);
+	letter-spacing: -0.15rem;
+	word-spacing: 0.5rem;
+	margin-bottom: 1rem;
+	font-weight: var(--semibold-fw);
+}
+
+.home-description {
+	margin-bottom: 5.5rem;
+	font-size: var(--lg-fs);
+	font-weight: var(--normal-fw);
+	color: var(--gray-color);
+}
 /************** End of HOME ***************/
 
 /***************** ABOUT *******************/
