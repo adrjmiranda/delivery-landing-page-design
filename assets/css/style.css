@@ -40,6 +40,7 @@
 
 	/* Border Radius */
 	--circle-radius: 50%;
+	--medium-radius: 0.35rem;
 }
 
 /***************** General *******************/
@@ -95,6 +96,15 @@ p {
 
 .section {
 	padding-block: var(--section-pb);
+}
+
+.section-title {
+	margin-bottom: 4.25rem;
+	text-align: center;
+	font-size: var(--xxl-fs);
+	text-transform: capitalize;
+	letter-spacing: -0.15rem;
+	word-spacing: 0.3rem;
 }
 
 .btn {
@@ -258,7 +268,70 @@ p {
 /************** End of ABOUT ***************/
 
 /***************** SERVICES *******************/
-/* TODO: Create SERVICES style */
+.service-card {
+	height: 100%;
+	overflow: hidden;
+	border-radius: var(--medium-radius);
+	padding: 2rem;
+	box-shadow: 1px 1px 25px 2px rgba(0, 0, 0, 0.05);
+	transition: 0.35s ease-in-out;
+}
+
+.service-card:hover {
+	transform: scale(1.05);
+	box-shadow: 1px 1px 25px 2px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+	font-size: var(--lg-fs);
+	text-align: center;
+	margin-bottom: 1.75rem;
+	font-weight: var(--bold-fw);
+	text-transform: uppercase;
+}
+
+.service-img {
+	height: 250px;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.service-description {
+	margin-block: 1.45rem;
+	font-size: var(--lg-fs);
+	text-align: center;
+	font-weight: var(--normal-fw);
+	color: var(--gray-color);
+	line-height: 1.5;
+	display: -webkit-box;
+	line-clamp: 3;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.service-more {
+	color: var(--primary-color);
+	font-size: var(--base-fs);
+	font-weight: var(--medium-fw);
+	text-transform: uppercase;
+	background-color: var(--secondary-color);
+	margin: 0 auto;
+	display: block;
+	width: fit-content;
+	padding: 0.55rem 1.85rem;
+	border-radius: var(--medium-radius);
+	transition: 0.35s ease-in-out;
+}
+
+.service-more:hover {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	transform: scale(1.05);
+	filter: drop-shadow(1px 1px 25px rgba(0, 0, 0, 0.25));
+}
 /************** End of SERVICES ***************/
 
 /***************** CONTACT *******************/
