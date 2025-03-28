@@ -155,6 +155,7 @@ p {
 	left: 0;
 	width: 100%;
 	background-color: var(--white-color);
+	z-index: 100;
 }
 
 .navbar-content {
@@ -236,7 +237,7 @@ p {
 .about-content {
 	display: flex;
 	flex-direction: column;
-	gap: 2.5rem;
+	gap: 1rem;
 }
 
 .about-img {
@@ -335,7 +336,24 @@ p {
 /************** End of SERVICES ***************/
 
 /***************** CONTACT *******************/
-/* TODO: Create CONTACT style */
+.contact-title {
+	font-size: var(--xl-fs);
+	text-transform: capitalize;
+	margin-bottom: 2.5rem;
+}
+
+.contact-description {
+	font-size: var(--lg-fs);
+	color: var(--gray-color);
+	font-weight: var(--normal-fw);
+	margin-bottom: 2rem;
+	line-height: 1.5;
+}
+
+.contact-app {
+	display: flex;
+	gap: 1.25rem;
+}
 /************** End of CONTACT ***************/
 
 /***************** FOOTER *******************/
