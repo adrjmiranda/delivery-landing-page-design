@@ -359,6 +359,39 @@ p {
 /***************** FOOTER *******************/
 #footer {
 	background-color: var(--tertiary-color);
+	padding-block: 3.5rem;
+}
+
+.footer-title {
+	font-size: var(--lg-fs);
+	text-transform: capitalize;
+	font-weight: var(--medium-fw);
+	margin-bottom: 1.5rem;
+}
+
+.footer-description {
+	font-weight: var(--light-fw);
+	color: var(--gray-color);
+	text-transform: uppercase;
+}
+
+.footer-menu {
+	flex-direction: column;
+	gap: 0.85rem;
+}
+
+.social-links {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-link {
+	font-size: var(--xl-fs);
+	transition: 0.35s ease-in-out;
+}
+
+.social-link:hover {
+	transform: scale(1.1);
 }
 /************** End of FOOTER ***************/
 
