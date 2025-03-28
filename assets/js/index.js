@@ -1,1 +1,1 @@
-console.log("It's working!");
+(()=>{var l=document.getElementById("navbar");window.addEventListener("scroll",(function(){window.scrollY>0?l.classList.add("scrolling"):l.classList.remove("scrolling")}))})();

@@ -159,6 +159,10 @@ p {
 	z-index: 100;
 }
 
+#navbar.scrolling {
+	box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.04);
+}
+
 .navbar-content {
 	display: flex;
 	justify-content: space-between;
